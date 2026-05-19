@@ -396,14 +396,7 @@ nav {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(13,148,136,0.1);
 }
-.fc-wide {
-  grid-row: span 2;
-  background: var(--dark);
-  border-color: rgba(255,255,255,0.06);
-}
-.fc-wide h3 { color: #ffffff !important; }
-.fc-wide p { color: #94a3b8 !important; }
-.fc-wide p { color: var(--muted); }
+
 .fc-icon {
   width: 48px; height: 48px;
   background: var(--teal-dim);
