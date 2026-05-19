@@ -422,7 +422,7 @@ nav {
   font-family: 'Syne', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
   margin-bottom: 10px;
   letter-spacing: -0.01em;
 }
