@@ -33,7 +33,7 @@ nav {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-dark);
   padding: 0 32px;
-  height: 90px;
+  height: 80px;
 }
 .nav-inner {
   max-width: 1200px;
@@ -44,11 +44,11 @@ nav {
   justify-content: space-between;
 }
 .nav-left { display: flex; align-items: center; gap: 10px; }
-.nav-logo { width: 90px; height: 90px; object-fit: contain; }
+.nav-logo { width: 60px; height: 60px; object-fit: contain; }
 .nav-brand {
   font-family: 'Syne', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--white);
   letter-spacing: -0.02em;
 }
@@ -422,7 +422,7 @@ nav {
   font-family: 'Syne', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: var(--navy);
+  color: #ffffff;
   margin-bottom: 10px;
   letter-spacing: -0.01em;
 }
