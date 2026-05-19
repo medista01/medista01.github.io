@@ -402,7 +402,8 @@ nav {
   background: var(--dark);
   border-color: rgba(255,255,255,0.06);
 }
-.fc-wide h3 { color: var(--white); }
+.fc-wide h3 { color: #ffffff !important; }
+.fc-wide p { color: #94a3b8 !important; }
 .fc-wide p { color: var(--muted); }
 .fc-icon {
   width: 48px; height: 48px;
