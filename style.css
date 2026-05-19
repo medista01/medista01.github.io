@@ -33,7 +33,7 @@ nav {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-dark);
   padding: 0 32px;
-  height: 64px;
+  height: 90px;
 }
 .nav-inner {
   max-width: 1200px;
@@ -44,7 +44,7 @@ nav {
   justify-content: space-between;
 }
 .nav-left { display: flex; align-items: center; gap: 10px; }
-.nav-logo { width: 48px; height: 64px; object-fit: contain; }
+.nav-logo { width: 90px; height: 90px; object-fit: contain; }
 .nav-brand {
   font-family: 'Syne', sans-serif;
   font-weight: 700;
