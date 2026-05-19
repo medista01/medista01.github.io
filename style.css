@@ -1287,7 +1287,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: 10px;
   margin-bottom: 14px;
 }
-.footer-brand .nav-logo-wrap { background: rgba(16,185,129,0.12); box-shadow: inset 0 0 0 1px rgba(16,185,129,0.18); }
+
 .footer-brand .nav-name { color: #fff; }
 .footer-brand p { color: #8a857f; font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
 
