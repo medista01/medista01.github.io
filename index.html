@@ -2,180 +2,580 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Medista — AI Healthcare Memory for Families</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Medista — your family's entire health history, finally in one place. AI-powered healthcare memory that organises lab reports, tracks trends, and answers plain-language questions." />
+  <title>Medista — Your family's healthcare memory</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- 
-  <nav>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
     <div class="nav-inner">
-      <div class="nav-left">
-        <img src="logo.png" alt="Medista" class="nav-logo">
-        <span class="nav-brand">Medista</span>
-      </div>
+      <a href="#top" class="nav-brand">
+        <span class="nav-logo-wrap">
+          <img src="logo.png" alt="" class="nav-logo" />
+        </span>
+        <span class="nav-name">Medista</span>
+      </a>
+
       <div class="nav-links">
         <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#demo">Try it</a>
         <a href="#collaborate">Collaborate</a>
-        <a href="mailto:ghoroa0725@gmail.com" class="nav-btn">Get Early Access</a>
       </div>
+
+      <a href="mailto:ghoroa0725@gmail.com" class="btn btn-primary nav-cta">
+        Get Early Access <span class="btn-arrow">→</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
- 
-  <header class="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-content">
-      <div class="hero-tag">
-        <span class="tag-dot"></span>
-        AI-Powered Healthcare
-      </div>
-      <h1>Your family's entire<br><em>health history</em>,<br>finally in one place.</h1>
-      <p class="hero-sub">
-        Medista organizes scattered diagnostic reports, tracks trends over time,
-        and lets you ask plain-language questions about your family's health —
-        no medical background needed.
-      </p>
-      <div class="hero-actions">
-        <a href="mailto:ghoroa0725@gmail.com" class="btn-primary">Join Early Access</a>
-        <a href="#features" class="btn-ghost">See How It Works</a>
-      </div>
-    </div>
- 
-    <div class="hero-ui">
-      <div class="ui-card">
-        <div class="ui-card-header">
-          <span class="ui-dot red"></span>
-          <span class="ui-dot amber"></span>
-          <span class="ui-dot green"></span>
-          <span class="ui-title">Medista AI</span>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          AI-Powered Healthcare Memory
         </div>
-        <div class="ui-chat">
-          <div class="chat-msg user-msg">Has my father's HbA1c been improving?</div>
-          <div class="chat-msg ai-msg">
-            <div class="ai-label">Medista</div>
-            Yes — across 4 reports from Jan 2023 to Oct 2024, his HbA1c dropped from <strong>8.2%</strong> to <strong>6.9%</strong>. That's now within the healthy target range.
-            <div class="trend-bar">
-              <div class="trend-title">HbA1c over time</div>
-              <div class="bars">
-                <div class="bar" style="height:72px"><span>8.2%</span></div>
-                <div class="bar" style="height:60px"><span>7.8%</span></div>
-                <div class="bar" style="height:44px"><span>7.3%</span></div>
-                <div class="bar" style="height:30px"><span>6.9%</span></div>
+
+        <h1 class="display">
+          Your family's entire<br />
+          health history,<br />
+          <em>finally in one place.</em>
+        </h1>
+
+        <p class="lede">
+          Medista organises scattered lab reports, tracks how every marker moves over time, and lets you ask plain-language questions about your family's health — no medical background required.
+        </p>
+
+        <div class="hero-actions">
+          <a href="mailto:ghoroa0725@gmail.com" class="btn btn-primary btn-lg">
+            Join Early Access <span class="btn-arrow">→</span>
+          </a>
+          <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
+        </div>
+
+        <!-- IMAGE SUGGESTION: Add a row of small partner / press logos here.
+             Use 5–6 grayscale PNG/SVG files (e.g. images/logos/lab1.svg). -->
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            End-to-end encrypted
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            HIPAA-grade privacy
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            FHIR-compatible
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero UI mockup -->
+      <div class="hero-right">
+        <div class="float-badge float-badge-top">
+          <div class="float-badge-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <div>
+            <div class="fb-label">Just added</div>
+            <div class="fb-text">Lipid Panel · Mother</div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-head">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="window-title">Medista AI · Father's profile</div>
+            <div class="live-pill"><span class="live-dot"></span>Live</div>
+          </div>
+
+          <div class="hero-chat">
+            <div class="msg msg-user">Has my father's HbA1c been improving?</div>
+
+            <div class="msg msg-ai">
+              <div class="msg-ai-label"><span>+</span> MEDISTA</div>
+              <p>
+                Yes — across <strong>4 reports</strong> from Jan 2023 to Oct 2024, his HbA1c dropped from <strong>8.2%</strong> to <strong>6.9%</strong>. That's now within the healthy target range.
+              </p>
+
+              <div class="chart-card">
+                <div class="chart-title">HbA1c · 2023 — 2024</div>
+                <div class="chart-bars">
+                  <div class="cb"><div class="cb-fill" style="--h:78%"><span>8.2%</span></div><span class="cb-date">Jan '23</span></div>
+                  <div class="cb"><div class="cb-fill" style="--h:68%"><span>7.8%</span></div><span class="cb-date">Jul '23</span></div>
+                  <div class="cb"><div class="cb-fill" style="--h:54%"><span>7.3%</span></div><span class="cb-date">Apr '24</span></div>
+                  <div class="cb"><div class="cb-fill cb-good" style="--h:42%"><span>6.9%</span></div><span class="cb-date">Oct '24</span></div>
+                </div>
               </div>
-              <div class="bar-dates"><span>Jan '23</span><span>Apr '23</span><span>Jan '24</span><span>Oct '24</span></div>
             </div>
           </div>
-          <div class="chat-msg user-msg">Can I share this with his doctor?</div>
-          <div class="chat-msg ai-msg">
-            <div class="ai-label">Medista</div>
-            Absolutely — tap <strong>Export Summary</strong> for a clean PDF timeline ready for any clinic visit.
+
+          <div class="hero-input">
+            <input type="text" placeholder="Ask about any family member's health…" readonly />
+            <button aria-label="Send">↑</button>
           </div>
         </div>
-        <div class="ui-input-row">
-          <input type="text" placeholder="Ask about any family member's health…" readonly>
-          <button>↑</button>
+
+        <div class="float-badge float-badge-bottom">
+          <div class="float-badge-icon heart">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-9.5C.85 7.99 3.5 4 7.5 4c2 0 3.5 1 4.5 2.5C13 5 14.5 4 16.5 4c4 0 6.65 3.99 5 7.5C19 16.65 12 21 12 21z"/></svg>
+          </div>
+          <div>
+            <div class="fb-label">Tracking</div>
+            <div class="fb-text">5 family members</div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Built for strip -->
+    <div class="built-strip">
+      <div class="built-inner container">
+        <span class="built-title">Built for the way families really live</span>
+        <ul class="built-list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Multi-city, multi-doctor</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> PDF uploads</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> FHIR-compatible records</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> HIPAA-grade privacy</li>
+        </ul>
       </div>
     </div>
   </header>
- 
-  <section class="stats-strip">
-    <div class="stats-inner">
-      <div class="stat">
-        <span class="stat-num">47%</span>
-        <span class="stat-desc">of families lose critical records during relocations</span>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="problem">
+    <div class="container two-col">
+      <div class="problem-visual">
+        <!-- IMAGE SUGGESTION: Replace the .report-stack below with a real photo
+             of a family looking at lab reports or a doctor consultation.
+             Recommended: <img src="images/family-reports.jpg" alt="…" class="problem-photo" />
+             Image size: ~900×900 px, soft natural lighting works best. -->
+        <div class="report-stack">
+          <div class="report-card r1">
+            <div class="rc-head"><span class="rc-lab">CITY LABS</span><span class="rc-date">14 Jan 2023</span></div>
+            <div class="rc-title">CBC — Mother</div>
+            <div class="rc-rows">
+              <div><span>Hemoglobin</span><b>11.4</b></div>
+              <div><span>WBC</span><b>7.2</b></div>
+              <div><span>Platelets</span><b>240</b></div>
+            </div>
+          </div>
+          <div class="report-card r2">
+            <div class="rc-head"><span class="rc-lab">CENTRAL LAB</span><span class="rc-date">08 Mar 2023</span></div>
+            <div class="rc-title">Lipid Panel — Self</div>
+            <div class="rc-rows">
+              <div><span>Total Chol.</span><b class="warn">238</b></div>
+              <div><span>LDL</span><b class="warn">162</b></div>
+              <div><span>HDL</span><b>41</b></div>
+            </div>
+          </div>
+          <div class="report-card r3">
+            <div class="rc-head"><span class="rc-lab">METRO DIAGNOSTICS</span><span class="rc-date">22 Jul 2023</span></div>
+            <div class="rc-title">HbA1c — Father</div>
+            <div class="rc-rows">
+              <div><span>HbA1c</span><b class="warn">7.8 %</b></div>
+              <div><span>Fasting Glu.</span><b>148</b></div>
+            </div>
+          </div>
+          <div class="report-card r4">
+            <div class="rc-head"><span class="rc-lab">EXCEL LAB</span><span class="rc-date">04 Nov 2023</span></div>
+            <div class="rc-title">Thyroid — Self</div>
+            <div class="rc-rows">
+              <div><span>TSH</span><b>4.6</b></div>
+              <div><span>T4</span><b>8.9</b></div>
+            </div>
+          </div>
+          <div class="report-card r5">
+            <div class="rc-head"><span class="rc-lab">RIVERSIDE HOSPITAL</span><span class="rc-date">19 Feb 2024</span></div>
+            <div class="rc-title">Vitamin Panel — Daughter</div>
+            <div class="rc-rows">
+              <div><span>Vitamin D</span><b class="warn">14</b></div>
+              <div><span>B12</span><b>412</b></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="stat-div"></div>
-      <div class="stat">
-        <span class="stat-num">3+ yrs</span>
-        <span class="stat-desc">of health data lost on average between doctor visits</span>
-      </div>
-      <div class="stat-div"></div>
-      <div class="stat">
-        <span class="stat-num">0</span>
-        <span class="stat-desc">unified platforms for family health history in fragmented systems</span>
+
+      <div class="problem-text">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> The everyday problem</div>
+        <h2 class="h-display">
+          You shouldn't have to carry your <em>family's health history</em> in your head.
+        </h2>
+        <p class="lede">
+          Different labs. Different cities. Different doctors. By the time the next appointment comes around, half the context is lost — or buried in an email from two years ago.
+        </p>
+        <ul class="check-list">
+          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> One profile per family member — parents, kids, dependents</li>
+          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Lab values extracted automatically — no manual typing</li>
+          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Trends across years, not just the last report</li>
+          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> FHIR-compatible — portable across clinics and apps</li>
+        </ul>
       </div>
     </div>
   </section>
- 
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container stats-row">
+      <div class="stat">
+        <span class="stat-tag">01</span>
+        <div class="stat-num">47<span>%</span></div>
+        <p>of families lose critical records during relocations across cities.</p>
+      </div>
+      <div class="stat">
+        <span class="stat-tag">02</span>
+        <div class="stat-num">3+ <span class="stat-unit">yrs</span></div>
+        <p>of health context lost on average between specialist visits.</p>
+      </div>
+      <div class="stat">
+        <span class="stat-tag">03</span>
+        <div class="stat-num">1</div>
+        <p>unified home for every report, prescription, and trend — finally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
   <section class="features" id="features">
-    <div class="features-inner">
-      <div class="eyebrow">What We Do</div>
-      <h2>Built for families navigating<br>fragmented healthcare</h2>
+    <div class="container">
+      <div class="features-head">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> What it does</div>
+          <h2 class="h-display">
+            Built for families navigating <em>fragmented healthcare.</em>
+          </h2>
+        </div>
+        <p class="lede features-lede">
+          Six primitives. One unified picture of your family's health — every report, every trend, every question, in one place.
+        </p>
+      </div>
+
       <div class="feature-grid">
-        <div class="feature-card">
+        <!-- 1 -->
+        <article class="feature-card">
           <div class="fc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
           </div>
-          <h3>Smart Report Ingestion</h3>
-          <p>Upload PDFs or photos from any lab. Medista extracts all test values instantly.</p>
-        </div>
-        <div class="feature-card">
+          <h3>Smart report ingestion</h3>
+          <p>Upload PDFs from any lab, in any city. Medista extracts every test value, unit, and reference range — automatically, in seconds.</p>
+          <div class="fc-visual">
+            <div class="ingest">
+              <div class="ingest-doc">
+                <div class="doc-lines"><span></span><span></span><span></span></div>
+                <div class="doc-tag">LAB REPORT · PDF</div>
+              </div>
+              <span class="ingest-arrow">→</span>
+              <div class="ingest-json">
+<pre>test:    <i>"Hemoglobin"</i>
+value:   <b>13.4</b> g/dL
+range:   <b>12.0 – 16.0</b>
+status:  <i>"normal"</i>
+flagged: false</pre>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="feature-card">
           <div class="fc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <h3>Trend Tracking</h3>
-          <p>See how glucose, cholesterol, and other markers move over years — not just the last result.</p>
-        </div>
-        <div class="feature-card">
+          <h3>Trends, not snapshots</h3>
+          <p>See how glucose, cholesterol, and vitamins move over years — not just the last result. Catch what a single report would miss.</p>
+          <div class="fc-visual">
+            <svg class="spark" viewBox="0 0 200 60" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="sg" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#059669" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0,18 L33,22 L66,16 L100,28 L133,24 L166,40 L200,46 L200,60 L0,60 Z" fill="url(#sg)"/>
+              <path d="M0,18 L33,22 L66,16 L100,28 L133,24 L166,40 L200,46" stroke="#059669" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <g fill="#059669">
+                <circle cx="0" cy="18" r="3"/><circle cx="33" cy="22" r="3"/><circle cx="66" cy="16" r="3"/>
+                <circle cx="100" cy="28" r="3"/><circle cx="133" cy="24" r="3"/><circle cx="166" cy="40" r="3"/><circle cx="200" cy="46" r="3"/>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="feature-card">
           <div class="fc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3>Family Profiles</h3>
-          <p>One account for parents, children, and dependents. Each person gets their own health timeline.</p>
-        </div>
-        <div class="feature-card">
+          <h3>Built around the family</h3>
+          <p>One account for parents, kids, and dependents. Every person gets their own timeline — separate, but searchable together.</p>
+          <div class="fc-visual">
+            <div class="people">
+              <div class="person"><span class="pa pa-f">F</span><div><b>Father</b><i>Diabetes · 62</i></div></div>
+              <div class="person"><span class="pa pa-m">M</span><div><b>Mother</b><i>Thyroid · 58</i></div></div>
+              <div class="person"><span class="pa pa-s">S</span><div><b>Self</b><i>Healthy · 32</i></div></div>
+              <div class="person"><span class="pa pa-d">D</span><div><b>Daughter</b><i>Allergy · 6</i></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="feature-card">
           <div class="fc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
-          <h3>AI Health Q&amp;A</h3>
-          <p>Ask anything in plain language and get direct answers with your actual data as context.</p>
-        </div>
+          <h3>Ask in plain language</h3>
+          <p>Ask anything about anyone's health — no medical jargon required. Answers are grounded in your family's real data, with sources cited.</p>
+          <div class="fc-visual">
+            <div class="mini-chat">
+              <div class="mc-bubble mc-user">When was Mother's last thyroid test?</div>
+              <div class="mc-bubble mc-ai">Her last <b>TSH</b> was on <b>14 Mar 2024</b> — value <b>3.2</b>, within range.</div>
+              <div class="mc-bubble mc-user">Show LDL trend for Father</div>
+              <div class="mc-bubble mc-ai">LDL trending <b>down 18%</b> since starting his new prescription.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="feature-card">
+          <div class="fc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="17" width="18" height="4" rx="1"/></svg>
+          </div>
+          <h3>Organised health records</h3>
+          <p>Reports automatically structured by person, marker, and date — searchable, exportable, and ready when your doctor asks.</p>
+          <div class="fc-visual">
+            <div class="records">
+              <div class="rec-row"><span class="rec-dot"></span> Father · HbA1c · Oct '24<i>6.9%</i></div>
+              <div class="rec-row"><span class="rec-dot"></span> Mother · TSH · Mar '24<i>3.2</i></div>
+              <div class="rec-row"><span class="rec-dot"></span> Self · Lipid · Jan '25<i>198</i></div>
+              <div class="rec-row"><span class="rec-dot"></span> Daughter · Vit D · Feb '24<i>14</i></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="feature-card">
+          <div class="fc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>FHIR-compatible</h3>
+          <p>Records stored in the global healthcare standard — so your data is portable, interoperable, and ready for any clinic or system.</p>
+          <div class="fc-visual">
+            <div class="fhir">
+              <svg class="fhir-lines" viewBox="0 0 240 140" preserveAspectRatio="none" aria-hidden="true">
+                <line x1="120" y1="70" x2="30" y2="22" /><line x1="120" y1="70" x2="210" y2="22" />
+                <line x1="120" y1="70" x2="30" y2="118" /><line x1="120" y1="70" x2="210" y2="118" />
+              </svg>
+              <div class="fhir-node fhir-center">FHIR</div>
+              <div class="fhir-node n1">Hospital</div>
+              <div class="fhir-node n2">Lab</div>
+              <div class="fhir-node n3">Clinic</div>
+              <div class="fhir-node n4">App</div>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-</section>
- 
-  <section class="collaborate" id="collaborate">
-    <div class="collab-inner">
-      <div class="eyebrow light-ey">Who We're Building With</div>
-      <h2 class="collab-h2">Medista grows with<br>the right people</h2>
-      <div class="collab-grid">
-        <div class="collab-card">
-          <div class="collab-num">01</div>
-          <h3>Healthcare Partners</h3>
-          <p>Labs, clinics, and diagnostic centers who want patients to arrive better informed.</p>
-        </div>
-        <div class="collab-card">
-          <div class="collab-num">02</div>
-          <h3>Early Users</h3>
-          <p>Families managing health records across multiple cities, countries, or caregivers.</p>
-        </div>
-        <div class="collab-card">
-          <div class="collab-num">03</div>
-          <h3>Researchers &amp; Builders</h3>
-          <p>Clinicians, designers, and engineers who care about healthcare access equity.</p>
-        </div>
-      </div>
-      <a href="mailto:ghoroa0725@gmail.com" class="btn-primary btn-outline-light">Start a Conversation</a>
     </div>
   </section>
- 
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand-row">
-          <img src="logo.png" alt="Medista" class="footer-logo">
-          <span class="footer-brand">Medista</span>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> How it works</div>
+      <h2 class="h-display">Four steps. <em>That's it.</em></h2>
+
+      <ol class="how-steps">
+        <li>
+          <span class="step-num">01</span>
+          <h3>Add your family</h3>
+          <p>Create a profile for each person you care for — parents, partner, kids, dependents.</p>
+        </li>
+        <li>
+          <span class="step-num">02</span>
+          <h3>Upload reports</h3>
+          <p>Drop in PDFs from any lab or hospital. New or years old — it all comes together.</p>
+        </li>
+        <li>
+          <span class="step-num">03</span>
+          <h3>We extract & organise</h3>
+          <p>Medista's AI reads every value, unit, and range, then files it into a clean timeline.</p>
+        </li>
+        <li>
+          <span class="step-num">04</span>
+          <h3>Ask anything</h3>
+          <p>Talk to your family's health history in plain language. Get answers with sources.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ INTERACTIVE DEMO ============ -->
+  <section class="demo" id="demo">
+    <div class="container two-col demo-grid">
+      <div class="demo-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Try the AI · Live</div>
+        <h2 class="h-display">Ask your family's health <em>a real question.</em></h2>
+        <p class="lede">
+          No medical jargon. No buried PDFs. Tap a question to see how Medista uses your family's actual reports to answer.
+        </p>
+
+        <div class="demo-suggestions" id="demoSuggestions">
+          <button class="suggest" data-q="hba1c">+ &nbsp; Has my father's HbA1c been improving?</button>
+          <button class="suggest" data-q="overdue">+ &nbsp; What's overdue for my mother?</button>
+          <button class="suggest" data-q="allergy">+ &nbsp; Any allergies in the family?</button>
+          <button class="suggest" data-q="ldl">+ &nbsp; Compare LDL across the family</button>
         </div>
-        <p class="footer-tagline">Healthcare memory for every family.</p>
       </div>
+
+      <div class="demo-chat">
+        <div class="hero-card demo-card">
+          <div class="hero-card-head">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <div class="window-title">Medista AI · Family chat</div>
+            <div class="live-pill"><span class="live-dot"></span>Demo</div>
+          </div>
+
+          <div class="demo-thread" id="demoThread">
+            <div class="msg msg-ai">
+              <div class="msg-ai-label"><span>+</span> MEDISTA</div>
+              <p>Hi — I'm Medista. Ask me anything about your family's health history. Try one of these to start ↓</p>
+            </div>
+          </div>
+
+          <div class="hero-input">
+            <input type="text" placeholder="Type a question or pick one from the left…" id="demoInput" />
+            <button id="demoSend" aria-label="Send">↑</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- ============ COLLABORATE ============ -->
+  <section class="collab" id="collaborate">
+    <div class="container">
+      <div class="collab-head">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Who we're building with</div>
+        <h2 class="h-display">Medista grows with <em>the right people.</em></h2>
+      </div>
+
+      <div class="collab-grid">
+        <article class="collab-card">
+          <span class="collab-num">01</span>
+          <h3>Healthcare Partners</h3>
+          <p>Labs, clinics, and diagnostic centers who want patients to arrive better informed — with their entire history, not a single page.</p>
+          <a href="mailto:ghoroa0725@gmail.com?subject=Healthcare Partner Inquiry" class="collab-link">Partner with us <span>→</span></a>
+        </article>
+
+        <article class="collab-card">
+          <span class="collab-num">02</span>
+          <h3>Early Users</h3>
+          <p>Families managing health records across multiple cities, countries, or caregivers — for parents, kids, or themselves.</p>
+          <a href="mailto:ghoroa0725@gmail.com?subject=Join the Waitlist" class="collab-link">Join the waitlist <span>→</span></a>
+        </article>
+
+        <article class="collab-card">
+          <span class="collab-num">03</span>
+          <h3>Researchers &amp; Builders</h3>
+          <p>Clinicians, designers, and engineers who care about healthcare access equity and want to help shape the product.</p>
+          <a href="mailto:ghoroa0725@gmail.com?subject=Research Collaboration" class="collab-link">Start a conversation <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="container cta-inner">
+      <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Early access · Open now</div>
+      <h2 class="h-display">
+        Stop searching for that report.<br />
+        <em>Start asking real questions.</em>
+      </h2>
+      <p class="lede">
+        Medista is in early access. Join the first families building their healthcare memory with us.
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:ghoroa0725@gmail.com" class="btn btn-accent btn-lg">Get Early Access <span class="btn-arrow">→</span></a>
+        <a href="#features" class="btn btn-outline-light btn-lg">Explore features</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <span class="nav-logo-wrap"><img src="logo.png" alt="" class="nav-logo" /></span>
+            <span class="nav-name">Medista</span>
+          </div>
+          <p>Healthcare memory for every family. Built with care, in early access.</p>
+          <div class="footer-socials">
+            <a href="mailto:ghoroa0725@gmail.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.828l-5.36-7.012L4.7 22H1.444l8.063-9.213L1 2h7l4.846 6.4L18.244 2zm-2.39 18h1.834L7.27 4H5.297l10.557 16z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#how">How it works</a>
+            <a href="#demo">Try the AI</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#collaborate">Collaborate</a>
+            <a href="mailto:ghoroa0725@gmail.com">Contact</a>
+            <a href="mailto:ghoroa0725@gmail.com?subject=Press">Press</a>
+          </div>
+          <div class="footer-col">
+            <h4>Trust</h4>
+            <a href="mailto:ghoroa0725@gmail.com?subject=Privacy">Privacy</a>
+            <a href="mailto:ghoroa0725@gmail.com?subject=Security">Security</a>
+            <a href="#features">FHIR compatibility</a>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <span>© 2026 Medista. Early stage — actively building.</span>
+        <span>© <span id="year">2026</span> Medista. Early stage — actively building.</span>
         <a href="mailto:ghoroa0725@gmail.com">ghoroa0725@gmail.com</a>
       </div>
     </div>
   </footer>
- 
+
+  <script src="script.js"></script>
 </body>
 </html>
