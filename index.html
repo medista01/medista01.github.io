@@ -3,96 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Medista</title>
+  <title>Medista — AI Healthcare Memory for Families</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-<section class="hero">
-    <img src="logo.png" class="logo" alt="Medista Logo">
-
-    <h1>Healthcare Memory for Families</h1>
-
-    <p class="tagline">
-        AI-powered medical report tracking for families across fragmented healthcare systems.
-    </p>
-
-    <p class="description">
-        Medista helps families organize years of scattered diagnostic reports,
-        track health trends over time, and ask questions like:
-    </p>
-
-    <div class="quote">
-        “Is my mother’s glucose improving?”
+ 
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <img src="logo.png" alt="Medista" class="nav-logo">
+        <span class="nav-brand">Medista</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#collaborate">Collaborate</a>
+        <a href="mailto:ghoroa0725@gmail.com" class="nav-btn">Get Early Access</a>
+      </div>
     </div>
-
-    <a href="mailto:hello@medista.health" class="button">
-        Contact Us
-    </a>
-</section>
-
-<section class="section">
-    <h2>What We Do</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>📄 Smart Report Ingestion</h3>
-            <p>Upload PDFs or images from any diagnostic lab. Medista extracts test values automatically.</p>
-        </div>
-
-        <div class="card">
-            <h3>📈 Health Tracking</h3>
-            <p>See health trends over time instead of digging through folders of reports.</p>
-        </div>
-
-        <div class="card">
-            <h3>👨‍👩‍👧 Family Care</h3>
-            <p>Manage health records for parents, children, and dependents in one place.</p>
-        </div>
+  </nav>
+ 
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        AI-Powered Healthcare
+      </div>
+      <h1>Your family's entire<br><em>health history</em>,<br>finally in one place.</h1>
+      <p class="hero-sub">
+        Medista organizes scattered diagnostic reports, tracks trends over time,
+        and lets you ask plain-language questions about your family's health —
+        no medical background needed.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:ghoroa0725@gmail.com" class="btn-primary">Join Early Access</a>
+        <a href="#features" class="btn-ghost">See How It Works</a>
+      </div>
     </div>
-</section>
-
-<section class="section">
-    <h2>We’re Looking For</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>🤝 Partners</h3>
-            <p>Healthcare organizations, labs, and clinics interested in collaboration.</p>
+ 
+    <div class="hero-ui">
+      <div class="ui-card">
+        <div class="ui-card-header">
+          <span class="ui-dot red"></span>
+          <span class="ui-dot amber"></span>
+          <span class="ui-dot green"></span>
+          <span class="ui-title">Medista AI</span>
         </div>
-
-        <div class="card">
-            <h3>🧪 Early Users</h3>
-            <p>Families and caretakers willing to test Medista and provide feedback.</p>
+        <div class="ui-chat">
+          <div class="chat-msg user-msg">Has my father's HbA1c been improving?</div>
+          <div class="chat-msg ai-msg">
+            <div class="ai-label">Medista</div>
+            Yes — across 4 reports from Jan 2023 to Oct 2024, his HbA1c dropped from <strong>8.2%</strong> to <strong>6.9%</strong>. That's now within the healthy target range.
+            <div class="trend-bar">
+              <div class="trend-title">HbA1c over time</div>
+              <div class="bars">
+                <div class="bar" style="height:72px"><span>8.2%</span></div>
+                <div class="bar" style="height:60px"><span>7.8%</span></div>
+                <div class="bar" style="height:44px"><span>7.3%</span></div>
+                <div class="bar" style="height:30px"><span>6.9%</span></div>
+              </div>
+              <div class="bar-dates"><span>Jan '23</span><span>Apr '23</span><span>Jan '24</span><span>Oct '24</span></div>
+            </div>
+          </div>
+          <div class="chat-msg user-msg">Can I share this with his doctor?</div>
+          <div class="chat-msg ai-msg">
+            <div class="ai-label">Medista</div>
+            Absolutely — tap <strong>Export Summary</strong> for a clean PDF timeline ready for any clinic visit.
+          </div>
         </div>
-
-        <div class="card">
-            <h3>🚀 Collaborators</h3>
-            <p>Researchers, builders, designers, and clinicians passionate about healthcare access.</p>
+        <div class="ui-input-row">
+          <input type="text" placeholder="Ask about any family member's health…" readonly>
+          <button>↑</button>
         </div>
+      </div>
     </div>
-</section>
-
-<section class="section">
-    <h2>Meet Us Online</h2>
-
-    <p>
-        We’re actively speaking with families, caretakers, healthcare professionals,
-        and potential collaborators.
-    </p>
-
-    <a href="mailto:ghoroa0725@gmail.com" class="button">
-        Schedule a Conversation
-    </a>
-</section>
-
-<footer>
-    <p>
-        Medista is currently in early development and expanding gradually.
-        This website is intentionally simple while we validate the problem
-        and build the future of family-centered healthcare tracking.
-    </p>
-</footer>
-
+  </header>
+ 
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num">47%</span>
+        <span class="stat-desc">of families lose critical records during relocations</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num">3+ yrs</span>
+        <span class="stat-desc">of health data lost on average between doctor visits</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-desc">unified platforms for family health history in fragmented systems</span>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="features" id="features">
+    <div class="features-inner">
+      <div class="eyebrow">What We Do</div>
+      <h2>Built for families navigating<br>fragmented healthcare</h2>
+      <div class="feature-grid">
+        <div class="feature-card fc-wide">
+          <div class="fc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Smart Report Ingestion</h3>
+          <p>Upload PDFs or photos from any lab. Medista reads the layout, extracts all test values, and links them to the right family member — instantly.</p>
+          <span class="fc-badge">Any lab, any format</span>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Trend Tracking</h3>
+          <p>See how glucose, cholesterol, and other markers move over years — not just the last result.</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Family Profiles</h3>
+          <p>One account for parents, children, and dependents. Each person gets their own health timeline.</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>AI Health Q&amp;A</h3>
+          <p>Ask anything in plain language and get direct answers with your actual data as context.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="collaborate" id="collaborate">
+    <div class="collab-inner">
+      <div class="eyebrow light-ey">Who We're Building With</div>
+      <h2 class="collab-h2">Medista grows with<br>the right people</h2>
+      <div class="collab-grid">
+        <div class="collab-card">
+          <div class="collab-num">01</div>
+          <h3>Healthcare Partners</h3>
+          <p>Labs, clinics, and diagnostic centers who want patients to arrive better informed.</p>
+        </div>
+        <div class="collab-card">
+          <div class="collab-num">02</div>
+          <h3>Early Users</h3>
+          <p>Families managing health records across multiple cities, countries, or caregivers.</p>
+        </div>
+        <div class="collab-card">
+          <div class="collab-num">03</div>
+          <h3>Researchers &amp; Builders</h3>
+          <p>Clinicians, designers, and engineers who care about healthcare access equity.</p>
+        </div>
+      </div>
+      <a href="mailto:ghoroa0725@gmail.com" class="btn-primary btn-outline-light">Start a Conversation</a>
+    </div>
+  </section>
+ 
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-row">
+          <img src="logo.png" alt="Medista" class="footer-logo">
+          <span class="footer-brand">Medista</span>
+        </div>
+        <p class="footer-tagline">Healthcare memory for every family.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Medista. Early stage — actively building.</span>
+        <a href="mailto:ghoroa0725@gmail.com">ghoroa0725@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+ 
 </body>
 </html>
