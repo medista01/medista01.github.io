@@ -44,7 +44,7 @@ nav {
   justify-content: space-between;
 }
 .nav-left { display: flex; align-items: center; gap: 10px; }
-.nav-logo { width: 30px; height: 30px; object-fit: contain; }
+.nav-logo { width: 48px; height: 48px; object-fit: contain; }
 .nav-brand {
   font-family: 'Syne', sans-serif;
   font-weight: 700;
